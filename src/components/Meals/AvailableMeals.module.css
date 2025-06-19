@@ -1,0 +1,83 @@
+.meals {
+  max-width: 1600px; /* Wider container */
+  margin: 2rem auto;
+  padding: 2rem 4rem;
+}
+
+.mealList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+  gap: 2.5rem; /* More space between items */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.meal {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.meal:hover {
+  transform: scale(1.03);
+}
+
+.image {
+  width: 100%;
+  height: 260px; /* Slightly taller image */
+  object-fit: cover;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 1.4rem; /* More padding */
+  height: 100%;
+}
+
+.details h3 {
+  margin: 0.6rem 0;
+  font-size: 1.4rem;
+}
+
+.rating {
+  color: #ffbb00;
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+.description {
+  color: #666;
+  font-size: 1.05rem;
+  margin-bottom: 0.6rem;
+  flex-grow: 1;
+}
+
+.price {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.button {
+  background-color: #8B0000;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 0.8rem 1.6rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #A52A2A;
+}
